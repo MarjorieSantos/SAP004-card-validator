@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;;
+}
+
+.container{
+    width: 400px;
+    height: 250px;
+    background: #1E2247;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+#card-number{
+    margin-top: 100px;
+}
+
+label{
+    color: white;
+    font-size: 10px;
+    
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: transparent;
+    padding: 10px 0;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
