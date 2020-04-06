@@ -10,22 +10,45 @@
 
 <body>
   <header>
-
+    <div id="header">
+      <h1>Validate Credit Card</h1>
+      <h2>check if your credit card is valid</h2>
+    </div>
   </header>
   <main>
-    <div class="container" id="card">
-      <div id="title">
-        <h1>Credit Card</h1>
+    <div id="box">
+      <div>
+        <div id="card">
+          <div id="title">
+            <h3>Credit Card</h3>
+          </div>
+          <div id="chip"></div>
+          <div id="showNumCard">
+            0000 0000 0000 0000
+          </div>
+        </div>
+        <div id="result" style="display: none;">
+          <p id="yes-or-not"></p>
+        </div>
       </div>
-      <div id="chip"></div>
-      <div id="card-number">
-        <!-- <label for="cartao"></label>  -->
-        <input type="text" name="cartao" id="cartao" maxlength="16" placeholder="xxxx xxxx xxxx xxxx">
+
+      <div id="input-btn">
+        <div id="card-number">
+          <label for="cartao">Card Number</label>
+          <input type="text" name="cartao" id="cartao" minlength="16" maxlength="16">
+        </div>
+        <div id="btn">
+          <button id="btn-validar">Validate</button>
+        </div>
       </div>
+
     </div>
   </main>
-  <footer></footer>
+  <footer>
+   <p>Copywrite  @  Marjorie Santos </p> 
+  </footer>
   <script src="index.js" type="module"></script>
-</body>
+</body>   
 
 </html>
+

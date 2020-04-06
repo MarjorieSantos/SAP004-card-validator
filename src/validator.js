@@ -1,41 +1,46 @@
 const validator = {
-  isValid: function(creditCardNumber){
-    let reverse = creditCardNumber.reverse()
+  isValid: function (creditCardNumber) {
+    let reverse = Array.from(creditCardNumber).reverse()
     let numPares = []
     let numImpar = []
-    let novoArray = []
+    let newArray = []
     for (let i = 1; i < reverse.length; i += 2) {
-        let dobroNumero = reverse[i] * 2
-    
-        if (dobroNumero >= 10) {
-            let numeroSeparado = Array.from(dobroNumero.toString())
-            let novoNumero = parseInt(numeroSeparado[0]) + parseInt(numeroSeparado[1])
-            numPares.push(novoNumero)
-        } else {
-            numPares.push(dobroNumero)
-        }
+      let doubleNumber = reverse[i] * 2
+
+      if (doubleNumber >= 10) {
+        let numeroSeparado = Array.from(doubleNumber.toString())
+        let newNumber = parseInt(numeroSeparado[0]) + parseInt(numeroSeparado[1])
+        numPares.push(newNumber)
+      } else {
+        numPares.push(doubleNumber)
+      }
     }
-    
+
     for (let i = 0; i < reverse.length; i += 2) {
-        numImpar.push(parseInt(reverse[i]))
-    }
-    
-    novoArray = [...numPares, ...numImpar]
-    
-    let soma = 0;
-    for (let i = 0; i < novoArray.length; i++) {
-        soma += novoArray[i]
-    }
-    
-    
-    if(soma%10 == 0){
-        console.log('seu cartão é valido')
-    } else{
-        console.log("seu cartão não é válido")
+      numImpar.push(parseInt(reverse[i]))
     }
 
-    return soma%10 == 0
+    newArray = [...numPares, ...numImpar]
 
+    let sum = 0;
+    for (let i = 0; i < newArray.length; i++) {
+      sum += newArray[i]
+    }
+
+    return sum % 10 == 0
+  },
+
+  maskify: function (creditCardNumber) {
+    let maskifyNumber = ""
+    for (let i = 0; i < creditCardNumber.length - 4; i++) {
+      maskifyNumber += '#';
+    }
+    for (var j = 4; j >= 1; j--) {
+      var lastCharacter = creditCardNumber.charAt(creditCardNumber.length - j);
+      var lastNums = lastCharacter;
+      maskifyNumber += lastNums;
+    }
+    return maskifyNumber
   }
 
 };
