@@ -32,14 +32,23 @@ const validator = {
 
   maskify: function (creditCardNumber) {
     let maskifyNumber = ""
+    let separator = " "
+    let verifica = 0
     for (let i = 0; i < creditCardNumber.length - 4; i++) {
-      maskifyNumber += '#';
+      verifica++
+      maskifyNumber += "#"
+      if((verifica % 4) == 0){
+        maskifyNumber += separator
+      }
+
     }
+
     for (var j = 4; j >= 1; j--) {
       var lastCharacter = creditCardNumber.charAt(creditCardNumber.length - j);
       var lastNums = lastCharacter;
       maskifyNumber += lastNums;
     }
+
     return maskifyNumber
   }
 
