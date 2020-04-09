@@ -19,9 +19,8 @@ const validator = {
     for (let i = 0; i < reverse.length; i += 2) {
       numImpar.push(parseInt(reverse[i]))
     }
-
     newArray = [...numPares, ...numImpar]
-
+    
     let sum = 0;
     for (let i = 0; i < newArray.length; i++) {
       sum += newArray[i]
