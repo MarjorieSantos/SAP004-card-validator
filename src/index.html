@@ -15,6 +15,7 @@
       <h2>check if your credit card is valid</h2>
     </div>
   </header>
+
   <main>
     <div id="box">
       <div>
@@ -23,16 +24,24 @@
             <h3>Credit Card</h3>
           </div>
           <div id="chip"></div>
-          <div id="showNumCard">
-            0000 0000 0000 0000
+          <div id="showNumCard" class="text-card">
+            0000  0000  0000  0000
+          </div>
+          <div id="name_card" class="text-card">
+            your name
           </div>
         </div>
+
         <div id="result" style="display: none;">
           <p id="yes-or-not"></p>
         </div>
       </div>
 
       <div id="input-btn">
+        <div id="input-name">
+          <label for="name">Name of card</label>
+          <input type="text" id="name"  maxlength="28">
+        </div>
         <div id="card-number">
           <label for="cartao">Card Number</label>
           <input type="text" name="cartao" id="cartao" minlength="16" maxlength="16">
@@ -41,14 +50,14 @@
           <button id="btn-validar">Validate</button>
         </div>
       </div>
-
+      
     </div>
   </main>
+
   <footer>
-   <p>Copywrite  @  Marjorie Santos </p> 
+    <p>Copywrite @ Marjorie Santos </p>
   </footer>
   <script src="index.js" type="module"></script>
-</body>   
+</body>
 
 </html>
-
