@@ -19,9 +19,8 @@ const validator = {
     for (let i = 0; i < reverse.length; i += 2) {
       numImpar.push(parseInt(reverse[i]))
     }
-
     newArray = [...numPares, ...numImpar]
-
+    
     let sum = 0;
     for (let i = 0; i < newArray.length; i++) {
       sum += newArray[i]
@@ -32,8 +31,15 @@ const validator = {
 
   maskify: function (creditCardNumber) {
     let maskifyNumber = ""
+    let separator = " "
+    let verifica = 0
     for (let i = 0; i < creditCardNumber.length - 4; i++) {
-      maskifyNumber += '#';
+      verifica++
+      maskifyNumber += "#"
+      if((verifica % 4) == 0){
+        maskifyNumber += separator
+      }
+
     }
 
     for (var j = 4; j >= 1; j--) {
