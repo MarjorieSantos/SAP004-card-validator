@@ -16,45 +16,45 @@
     </div>
   </header>
 
-  <main>
-    <div id="box">
+  <main class="main">
+    <div class="box">
       <div>
-        <div id="card">
+        <div class="card">
           <div id="title">
             <h3>Credit Card</h3>
           </div>
-          <div id="chip"></div>
-          <div id="showNumCard" class="text-card">
+          <div class="chip"></div>
+          <div id="showNumCard" class="text-card card-with-number">
             0000 0000 0000 0000
           </div>
-          <div id="name_card" class="text-card">
+          <div id="name_card" class="text-card name-of-card">
             your name
           </div>
         </div>
 
-        <div id="result" style="display: none;">
+        <div class="result" style="display: none;">
           <p id="yes-or-not"></p>
         </div>
       </div>
 
-      <div id="input-btn">
+      <div class="input-btn">
         <div id="input-name">
           <label for="name">Name of card</label>
           <input type="text" id="name" maxlength="28">
         </div>
         <div id="card-number">
-          <label for="cartao">Card Number</label>
-          <input type="text" name="cartao" id="cartao" minlength="16" maxlength="16">
+          <label for="card-number">Card Number</label>
+          <input type="text" class="card-number" name="card-number" id="card-number" minlength="16" maxlength="16">
         </div>
         <div id="btn">
-          <button id="btn-validar">Validate</button>
+          <button id="btn-validar" class="validate-card">Validate</button>
         </div>
       </div>
 
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>Copywrite @ Marjorie Santos </p>
   </footer>
   <script src="./src//index.js" type="module"></script>

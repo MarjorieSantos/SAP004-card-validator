@@ -1,69 +1,55 @@
-html{
-    height: 100%;
-}
-
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    align-items: center;
-    background: #570C82;
-    letter-spacing: 2px;
-}
-
-h1{
-    text-align: center;
-    font-size: 45px;
-}
-
-h2{
-    font-size: 25px;
-    text-align: center;
-}
-
-h3{
-    color: white;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-left: 20px;
-}
-
-p{
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-}
-
-label{
-    color: #570C82;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-header{
-    color:#F2F2F2;
-    width: 100%;
-}
-
-main{
-  flex: 1;
-  justify-content: space-between;
+body {
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
   align-items: center;
-    margin: 50px 0;
-    width: 55vw;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 0.5em rgba(0, 0, 0, 0.507);
+  background: #570C82;
+  letter-spacing: 2px;
+  height: 100vh;
 }
 
-input{
+h1, h2, h3, p, input {
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+p {
+  display: inline-block;
+  font-size: 18px;
+}
+
+label {
+  color: #570C82;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header {
+  color:#F2F2F2;
+  width: 100%;
+}
+
+input {
   background: transparent;
   border: 2px solid #570C82;
   padding: 9px 6px;
@@ -71,48 +57,59 @@ input{
   border-radius: 5px;
   color:black;
   font-size: 15px;
-  text-align: center;
   position: relative;
   display: block;
   margin-top: 4px;
 }
 
-#box{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 40px;
+.main {
+  flex: 1;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  width: 55vw;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0.5em rgba(0, 0, 0, 0.507);
 }
 
-#card{
-    width: 430px;
-    height: 280px;
-    background: linear-gradient(#7C2491 ,#702583 );
-    border: 1px solid transparent;
-    border-radius: 20px;
-    box-shadow: 5px 5px 0.5em rgba(0, 0, 0, 0.507);
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
 }
 
-#chip {
-    background: url(assets/chip.png);
-    height: 65px;
-    width: 60px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: relative;
-    left: 40px;
-    top: 15px;
+.card {
+  width: 430px;
+  height: 280px;
+  background: linear-gradient(#7C2491 ,#702583 );
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0.5em rgba(0, 0, 0, 0.507);
 }
 
-#result{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+.chip {
+  background: url(assets/chip.png);
+  height: 65px;
+  width: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  left: 40px;
+  top: 15px;
 }
 
-#input-btn{
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,46 +117,46 @@ input{
   border-radius: 20px;
 }
 
-#input-btn #btn-validar {
-    background: #7C2491;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 8px 10px;
-    font-size: 15px;
-    cursor: pointer;
+.input-btn .validate-card {
+  background: #7C2491;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 10px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
-#card-number{
-    margin-top: 20px;
+.card-number {
+  margin-top: 20px;
 }
 
-.text-card{
-    background: transparent;
-    padding: 8px 0;
-    color:white;
-    text-align: center;
-    position: relative;
-    display: inline-block;
+.text-card {
+  background: transparent;
+  padding: 8px 0;
+  color:white;
+  text-align: center;
+  position: relative;
+  display: inline-block;
 }
 
-#showNumCard {
-    font-size: 25px;
-    top: 30px;
-    right: 30px;
-    width: 100%;
+.card-with-number {
+  font-size: 25px;
+  top: 30px;
+  right: 30px;
+  width: 100%;
 }
 
-#name_card{
-    font-size: 20px;
-    top: 30px;
-    left: 50px;
+.name-of-card {
+  font-size: 20px;
+  top: 30px;
+  left: 50px;
 }
 
-footer{
-    color: white;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    bottom: 0;
+.footer {
+  color: white;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  bottom: 0;
 }

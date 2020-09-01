@@ -8,9 +8,9 @@
 
 ## 1. Resumo do projeto
 
-Esse projeto foi passado para quem já havia terminado a refatoração do primeiro projeto.S
+Esse projeto foi passado para quem já havia terminado a refatoração do primeiro projeto Cifra de César.
 
-Neste projeto, foi feita a crianção de um aplicativo Web que permite ao usuário validar o número de um cartão de crédito.
+Neste projeto, foi feita a crianção de um aplicativo qeb que permite ao usuário validar o número de um cartão de crédito.
 
 **OBS**: o site não está responsivo, apenas adequado para desktop.
 
@@ -22,6 +22,8 @@ A interface permite que o usuário:
 
 #### Funcionalmente (JavaScript - testes de unidade)
 
-* A lógica do projeto foi totalmente implementada em JavaScript.
-* Não foi utilizado bibliotecas ou frameworks, apenas JavaScript puro, também conhecido como JavaScript Vanilla.
-* e tabém foram desenvolvidos testes em Jest.
+* A lógica do projeto foi totalmente implementada em JavaScript Vanilla.
+* Não foi utilizado bibliotecas ou frameworks.
+* Foram desenvolvidos testes em Jest, podendo ser encontrados na pasta teste.
+
+Desenvolvido por: [Marjorie Santos](www.linkedin.com/in/marjorie-scf)
